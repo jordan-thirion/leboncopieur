@@ -41,6 +41,8 @@ contactForm: FormGroup;
         console.error('Erreur EmailJS:', error);
         alert("Échec de l'envoi du message.");
       });
+    } else {
+      alert('Veuillez remplir correctement le formulaire avant de soumettre.');
     }
   }
 }

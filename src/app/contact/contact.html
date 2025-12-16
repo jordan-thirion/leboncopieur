@@ -21,21 +21,33 @@
                 <div class="input-with-legend">
                     <span>Votre nom</span>
                     <input required formControlName="name" class="ember-text-field ember-view" type="text">
+                    <p class="error" *ngIf="contactForm.get('name')?.hasError('required')">
+                        * Le nom est requis
+                    </p>
                 </div>
                 <div class="input-with-legend">
                     <span>Votre mail</span>
                     <input required formControlName="email" class="ember-text-field ember-view" type="email">
+                    <p class="error" *ngIf="contactForm.get('email')?.hasError('email')">
+                        * L'email n'est pas conforme
+                    </p>
                 </div>
             </div>
             <div class="input-with-legend">
                 <span>Objet</span>
                 <input required formControlName="object" placeholder="Ex : Demande de dépannage" class="ember-text-field ember-view" type="text">
+                <p class="error" *ngIf="contactForm.get('object')?.hasError('required')">
+                    * L'object est requis
+                </p>
             </div>
             <div class="input-with-legend">
                 <span>Votre message</span>
                 <textarea required formControlName="message" name="contact-textarea" rows="5" placeholder="Ecrivez ici"></textarea>
+                <p class="error" *ngIf="contactForm.get('message')?.hasError('minlength')">
+                    * Le message est requis et doit avoir au moins 10 caractères
+                </p>
             </div>
-            <button type="submit" class="primary button-lg lg" [disabled]="contactForm.invalid">Envoyer</button>
+            <button type="submit" class="primary button-lg lg">Envoyer</button>
         </form>
     </div>
 </div>

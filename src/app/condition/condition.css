@@ -7,3 +7,9 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .condition-container {
+        padding: 100px 50px;
+    }
+}
