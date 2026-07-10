@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lbcjordan": {
+    "leboncopieur": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lbcjordan:build:production"
+              "buildTarget": "leboncopieur:build:production"
             },
             "development": {
-              "buildTarget": "lbcjordan:build:development"
+              "buildTarget": "leboncopieur:build:development"
             }
           },
           "defaultConfiguration": "development"
