@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubCard } from './sub-card';
+import { SubCardComponent as SubCard } from './sub-card';
 
 describe('SubCard', () => {
   let component: SubCard;
