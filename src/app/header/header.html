@@ -3,11 +3,11 @@
         <a routerLink="/"><img src="/img/logo-LBC.svg" alt=""></a>
     </div>
     <div class="header-links">
-        <a routerLink="/maintenance">Réparation et maintenance</a>
-        <a routerLink="/location">Vente et locations</a>
-        <a (click)="scrollTo('numérisation-GED')">Numérisation-GED Solutions Facturation</a>
-        <a (click)="scrollTo('stockage-NAS')">Stockage DATA & Sécurisation</a>
-        <a (click)="scrollTo('tableaux-interactifs')">Ecrans Affichage Dynamiques</a>
+        <h2 routerLink="/maintenance">Réparation et maintenance</h2>
+        <h2 routerLink="/location">Vente et locations</h2>
+        <h2 (click)="scrollTo('numérisation-GED')">Numérisation-GED Solutions Facturation</h2>
+        <h2 (click)="scrollTo('stockage-NAS')">Stockage DATA & Sécurisation</h2>
+        <h2 (click)="scrollTo('tableaux-interactifs')">Ecrans Affichage Dynamiques</h2>
         <button class="primary button-sm lg" (click)="scrollTo('contact')">Contact</button> <!-- TODO refaire classe -->
     </div>
 </header>
@@ -17,7 +17,7 @@
     <div class="visible-buttons">
         <div class="header-action-buttons">
             <button class="primary xs button-xs" (click)="scrollTo('contact')"> Contact </button>
-            <a href="tel:0618934872" class="tertiary tel-button"><img src="/img/icons/orange-phone.svg" /></a>
+            <h2 href="tel:0618934872" class="tertiary tel-button"><img src="/img/icons/orange-phone.svg" /></h2>
             <!-- <select class="tertiary dropdown">
                 <option routerLink="/maintenance">Réparation et maintenance</option>
                 <option routerLink="/location">Vente et locations</option>
@@ -25,9 +25,9 @@
             </select> -->
             <button class="tertiary dropdown" matButton [matMenuTriggerFor]="aboveMenu"><img src="/img/icons/hamburger.png" /></button>
             <mat-menu class="links" #aboveMenu="matMenu" yPosition="above">
-                <a class="link" mat-menu-item routerLink="/maintenance">Réparation et maintenance</a>
-                <a mat-menu-item routerLink="/location">Vente et locations</a>
-                <a mat-menu-item routerLink="">Accueil</a>
+                <h2 class="link" mat-menu-item routerLink="/maintenance">Réparation et maintenance</h2>
+                <h2 mat-menu-item routerLink="/location">Vente et locations</h2>
+                <h2 mat-menu-item routerLink="">Accueil</h2>
             </mat-menu>
         </div>
     </div>
