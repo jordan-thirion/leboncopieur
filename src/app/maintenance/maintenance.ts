@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ContactComponent } from '../contact/contact';
 import { AppModule } from '../app.module';
 
@@ -6,6 +6,7 @@ import { AppModule } from '../app.module';
   selector: 'app-maintenance',
   imports: [AppModule, ContactComponent],
   templateUrl: './maintenance.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./maintenance.scss']
 })
 export class MaintenanceComponent {

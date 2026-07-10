@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ItemCardComponent } from '../item-card/item-card';
 import { ContactComponent } from '../contact/contact';
 import { SubCardComponent } from '../sub-card/sub-card';
@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-home',
   imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent, RouterLink],
   templateUrl: './home.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./home.scss']
 })
 export class HomeComponent {

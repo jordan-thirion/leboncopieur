@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ItemCardComponent } from '../item-card/item-card';
 import { ContactComponent } from '../contact/contact';
 import { SubCardComponent } from '../sub-card/sub-card';
@@ -8,6 +8,7 @@ import { AppModule } from '../app.module';
   selector: 'app-location',
   imports: [AppModule, ItemCardComponent, ContactComponent, SubCardComponent],
   templateUrl: './location.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./location.scss']
 })
 export class LocationComponent {

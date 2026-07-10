@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AppModule } from '../app.module';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs from 'emailjs-com';
@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com';
   selector: 'app-contact',
   imports: [AppModule],
   templateUrl: './contact.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./contact.scss']
 })
 export class ContactComponent {
